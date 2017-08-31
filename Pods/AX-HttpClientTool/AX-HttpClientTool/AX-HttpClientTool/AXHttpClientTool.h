@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AXHttpClientTool : NSObject
+typedef void (^HttpRequestSuccess)(id JSON);
+typedef void (^HttpRequestFailure)(NSError *error);
 
+@interface AXHttpClientTool : NSObject
++ (instancetype)sharedTool;
+
++ (NSURLSessionDataTask *)POST:(NSString *)path params:(NSDictionary *)params success:(HttpRequestSuccess)success failure:(HttpRequestFailure)failure;
+
++ (NSURLSessionDataTask *)GET:(NSString *)path params:(NSDictionary *)params success:(HttpRequestSuccess)success failure:(HttpRequestFailure)failure;
+
++ (NSURLSessionDataTask *)PUT:(NSString *)path params:(NSDictionary *)params success:(HttpRequestSuccess)success failure:(HttpRequestFailure)failure;
 @end

@@ -14,6 +14,11 @@
 		7EE6087D1F53C48B00CB9173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE6087B1F53C48B00CB9173 /* Main.storyboard */; };
 		7EE6087F1F53C48B00CB9173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EE6087E1F53C48B00CB9173 /* Assets.xcassets */; };
 		7EE608821F53C48B00CB9173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE608801F53C48B00CB9173 /* LaunchScreen.storyboard */; };
+		7EE609061F56616C00CB9173 /* ProjectListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE609051F56616C00CB9173 /* ProjectListViewController.m */; };
+		7EE6090B1F56640700CB9173 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE609081F56640700CB9173 /* CircleView.m */; };
+		7EE6090C1F56640700CB9173 /* ProjectListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE6090A1F56640700CB9173 /* ProjectListTableViewCell.m */; };
+		7EE609101F568D5800CB9173 /* ProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE6090F1F568D5800CB9173 /* ProjectModel.m */; };
+		7EE609131F568D7500CB9173 /* ProjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE609121F568D7500CB9173 /* ProjectViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,17 @@
 		7EE6087E1F53C48B00CB9173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EE608811F53C48B00CB9173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EE608831F53C48B00CB9173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EE609041F56616C00CB9173 /* ProjectListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListViewController.h; sourceTree = "<group>"; };
+		7EE609051F56616C00CB9173 /* ProjectListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListViewController.m; sourceTree = "<group>"; };
+		7EE609071F56640700CB9173 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		7EE609081F56640700CB9173 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		7EE609091F56640700CB9173 /* ProjectListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectListTableViewCell.h; sourceTree = "<group>"; };
+		7EE6090A1F56640700CB9173 /* ProjectListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectListTableViewCell.m; sourceTree = "<group>"; };
+		7EE6090D1F566AD400CB9173 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7EE6090E1F568D5800CB9173 /* ProjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectModel.h; sourceTree = "<group>"; };
+		7EE6090F1F568D5800CB9173 /* ProjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectModel.m; sourceTree = "<group>"; };
+		7EE609111F568D7500CB9173 /* ProjectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectViewModel.h; sourceTree = "<group>"; };
+		7EE609121F568D7500CB9173 /* ProjectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectViewModel.m; sourceTree = "<group>"; };
 		E065ECD9588BB949484589D6 /* Pods-AXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AXProject/Pods-AXProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +94,7 @@
 				7EE608761F53C48B00CB9173 /* AppDelegate.m */,
 				7EE608781F53C48B00CB9173 /* ViewController.h */,
 				7EE608791F53C48B00CB9173 /* ViewController.m */,
+				7EE608FF1F54219C00CB9173 /* AXProject */,
 				7EE6087B1F53C48B00CB9173 /* Main.storyboard */,
 				7EE6087E1F53C48B00CB9173 /* Assets.xcassets */,
 				7EE608801F53C48B00CB9173 /* LaunchScreen.storyboard */,
@@ -91,8 +108,59 @@
 			isa = PBXGroup;
 			children = (
 				7EE608731F53C48B00CB9173 /* main.m */,
+				7EE6090D1F566AD400CB9173 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EE608FF1F54219C00CB9173 /* AXProject */ = {
+			isa = PBXGroup;
+			children = (
+				7EE609001F5660E000CB9173 /* ViewControllers */,
+				7EE609011F5660FE00CB9173 /* Views */,
+				7EE609031F56614E00CB9173 /* Models */,
+				7EE609021F56613B00CB9173 /* ViewModels */,
+			);
+			path = AXProject;
+			sourceTree = "<group>";
+		};
+		7EE609001F5660E000CB9173 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7EE609041F56616C00CB9173 /* ProjectListViewController.h */,
+				7EE609051F56616C00CB9173 /* ProjectListViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7EE609011F5660FE00CB9173 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EE609071F56640700CB9173 /* CircleView.h */,
+				7EE609081F56640700CB9173 /* CircleView.m */,
+				7EE609091F56640700CB9173 /* ProjectListTableViewCell.h */,
+				7EE6090A1F56640700CB9173 /* ProjectListTableViewCell.m */,
+			);
+			name = Views;
+			path = AXProject/AXProject/Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		7EE609021F56613B00CB9173 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7EE609111F568D7500CB9173 /* ProjectViewModel.h */,
+				7EE609121F568D7500CB9173 /* ProjectViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7EE609031F56614E00CB9173 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7EE6090E1F568D5800CB9173 /* ProjectModel.h */,
+				7EE6090F1F568D5800CB9173 /* ProjectModel.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		AB304F99740B163D7420F47A /* Frameworks */ = {
@@ -229,7 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE609131F568D7500CB9173 /* ProjectViewModel.m in Sources */,
+				7EE609061F56616C00CB9173 /* ProjectListViewController.m in Sources */,
+				7EE6090B1F56640700CB9173 /* CircleView.m in Sources */,
 				7EE6087A1F53C48B00CB9173 /* ViewController.m in Sources */,
+				7EE609101F568D5800CB9173 /* ProjectModel.m in Sources */,
+				7EE6090C1F56640700CB9173 /* ProjectListTableViewCell.m in Sources */,
 				7EE608771F53C48B00CB9173 /* AppDelegate.m in Sources */,
 				7EE608741F53C48B00CB9173 /* main.m in Sources */,
 			);
@@ -353,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2WF494FH62;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AXProject/PrefixHeader.pch";
 				INFOPLIST_FILE = AXProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anxindeli.AXProject;
@@ -366,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2WF494FH62;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/AXProject/PrefixHeader.pch";
 				INFOPLIST_FILE = AXProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anxindeli.AXProject;
@@ -392,6 +467,7 @@
 				7EE608881F53C48B00CB9173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

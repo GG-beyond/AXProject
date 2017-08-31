@@ -4,7 +4,7 @@
 target 'AXProject' do
   pod 'CTMediator', '~> 12'
   pod 'AFNetworking', '~> 3.1.0'
-  pod 'Categories-AX','~> 0.0.9'
-  pod 'AX-HttpClientTool','~> 0.0.1'
-
+  pod 'Categories-AX','~> 0.1.0'
+  pod 'AX-HttpClientTool','~> 0.0.4'
+  pod 'Masonry','~> 1.0.2'
 end
