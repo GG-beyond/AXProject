@@ -18,11 +18,12 @@ Pod::Spec.new do |s|
 
 
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
 
-  s.author             = { "GG-beyond" => "872608550@qq.com" 
+  s.author             = { "GG-beyond" => "872608550@qq.com" }
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios
+  s.ios.deployment_target = "8.0"
 
   s.source       = { :git => "https://github.com/GG-beyond/AXProject.git", :tag => "0.0.1" }
 
