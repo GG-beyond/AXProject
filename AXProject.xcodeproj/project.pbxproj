@@ -45,6 +45,7 @@
 		7EE6090F1F568D5800CB9173 /* ProjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectModel.m; sourceTree = "<group>"; };
 		7EE609111F568D7500CB9173 /* ProjectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectViewModel.h; sourceTree = "<group>"; };
 		7EE609121F568D7500CB9173 /* ProjectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectViewModel.m; sourceTree = "<group>"; };
+		7EE609141F58055900CB9173 /* MyConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyConstants.h; sourceTree = "<group>"; };
 		E065ECD9588BB949484589D6 /* Pods-AXProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AXProject/Pods-AXProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +110,7 @@
 			children = (
 				7EE608731F53C48B00CB9173 /* main.m */,
 				7EE6090D1F566AD400CB9173 /* PrefixHeader.pch */,
+				7EE609141F58055900CB9173 /* MyConstants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
