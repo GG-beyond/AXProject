@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "AXProject"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "项目列表"
 
   s.description  = <<-DESC
@@ -25,10 +25,40 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/GG-beyond/AXProject.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://github.com/GG-beyond/AXProject.git", :tag => "0.0.3" }
   
 
-  s.source_files  = "AXProject/AXProject/ViewControllers/*","AXProject/AXProject/Views/*","AXProject/AXProject/ViewModels/*","AXProject/AXProject/Models/*"
+#  s.source_files = "AXProject/AXProject/**"
+
+    s.subspec 'Models' do |mod|
+
+        mod.source_files =  'AXProject/AXProject/Models/*.{h,m}'
+    end
+
+    s.subspec 'ViewModels' do |vm|
+
+        vm.source_files =  'AXProject/AXProject/ViewModels/*.{h,m}'
+        vm.dependency 'AXProject/Models'
+
+
+    end
+
+    s.subspec 'ViewControllers' do |shared|
+
+        shared.source_files =  'AXProject/AXProject/ViewControllers/*.{h,m}'
+        shared.dependency 'AXProject/ViewModels'
+        shared.dependency 'AXProject/Views'
+
+    end
+
+    s.subspec 'Views' do |app|
+
+        app.source_files =  'AXProject/AXProject/Views/*.{h,m}'
+        app.dependency 'AXProject/Models'
+
+    end
+    
+
   s.exclude_files = "Classes/Exclude"
   s.prefix_header_file = "AXProject/MyConstants.h"
   s.dependency 'CTMediator', '~> 12'
