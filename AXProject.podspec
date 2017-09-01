@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "AXProject"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "项目列表"
 
   s.description  = <<-DESC
@@ -25,16 +25,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/GG-beyond/AXProject.git", :tag => "0.0.1" }
-
-
+  s.source       = { :git => "https://github.com/GG-beyond/AXProject.git", :tag => "0.0.2" }
   
 
-  s.source_files  = "AXProject/AXProject/*.{h,m}"
+  s.source_files  = "AXProject/AXProject/ViewControllers/*","AXProject/AXProject/Views/*","AXProject/AXProject/ViewModels/*","AXProject/AXProject/Models/*"
   s.exclude_files = "Classes/Exclude"
-  s.prefix_header_contents = '#import "MyConstants.h"'
-  
-  # s.dependency "JSONKit", "~> 1.4"
+  s.prefix_header_file = "AXProject/MyConstants.h"
   s.dependency 'CTMediator', '~> 12'
   s.dependency 'AFNetworking', '~> 3.1.0'
   s.dependency 'Categories-AX','~> 0.1.0'
