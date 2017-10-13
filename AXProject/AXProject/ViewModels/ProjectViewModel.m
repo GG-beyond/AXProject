@@ -32,7 +32,7 @@
     
 }
 - (void)doProjectListRefreshNewData{
-    currentPage = 0;
+    currentPage = 1;
     [self getProjectData];
     
 }
@@ -53,7 +53,7 @@
     
     __weak typeof(self)weakSelf = self;
     
-    [AXHttpClientTool POST:@"v1/project/list" params:self.optionDict success:^(id JSON) {
+    [AXHttpClientTool POST:@"v1/project/list" params:dict success:^(id JSON) {
         
         NSDictionary *respondDict = (NSDictionary *)JSON;
         NSInteger status = [respondDict[@"status"] integerValue];
@@ -80,7 +80,7 @@
 - (void)dealWithProjectInfo:(NSDictionary *)data{
     
     NSInteger page = [data[@"page"] integerValue];
-    NSInteger pages = [data[@"pages"] integerValue];
+//    NSInteger pages = [data[@"pages"] integerValue];
     if (page == 1) {
         [self.listArr removeAllObjects];
     }
@@ -93,9 +93,6 @@
             [self.listArr addObject:model];
         }
     }
-    
-    
-    
 }
 #pragma mark - 数据绑定
 - (NSInteger)getSectionCount{

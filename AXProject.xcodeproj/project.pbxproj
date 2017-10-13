@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		19360FFDD214606AE374357F /* libPods-AXProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CD4E4ED65587C73C71602D /* libPods-AXProject.a */; };
+		7E7CB6B21F90BF8600B54BA7 /* CTMediator+Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7CB6AF1F90BF8600B54BA7 /* CTMediator+Project.m */; };
+		7E7CB6B31F90BF8600B54BA7 /* Target_Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7CB6B01F90BF8600B54BA7 /* Target_Project.m */; };
 		7EE608741F53C48B00CB9173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE608731F53C48B00CB9173 /* main.m */; };
 		7EE608771F53C48B00CB9173 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE608761F53C48B00CB9173 /* AppDelegate.m */; };
 		7EE6087A1F53C48B00CB9173 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE608791F53C48B00CB9173 /* ViewController.m */; };
@@ -24,6 +26,10 @@
 /* Begin PBXFileReference section */
 		0942689393A12E61C18DC194 /* Pods-AXProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AXProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AXProject/Pods-AXProject.release.xcconfig"; sourceTree = "<group>"; };
 		09CD4E4ED65587C73C71602D /* libPods-AXProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AXProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7CB6AE1F90BF8600B54BA7 /* Target_Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_Project.h; sourceTree = "<group>"; };
+		7E7CB6AF1F90BF8600B54BA7 /* CTMediator+Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+Project.m"; sourceTree = "<group>"; };
+		7E7CB6B01F90BF8600B54BA7 /* Target_Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_Project.m; sourceTree = "<group>"; };
+		7E7CB6B11F90BF8600B54BA7 /* CTMediator+Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+Project.h"; sourceTree = "<group>"; };
 		7EE6086F1F53C48B00CB9173 /* AXProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE608731F53C48B00CB9173 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EE608751F53C48B00CB9173 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +74,17 @@
 				0942689393A12E61C18DC194 /* Pods-AXProject.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E7CB6AD1F90BF6700B54BA7 /* CTMediatorCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7E7CB6B11F90BF8600B54BA7 /* CTMediator+Project.h */,
+				7E7CB6AF1F90BF8600B54BA7 /* CTMediator+Project.m */,
+				7E7CB6AE1F90BF8600B54BA7 /* Target_Project.h */,
+				7E7CB6B01F90BF8600B54BA7 /* Target_Project.m */,
+			);
+			path = CTMediatorCategory;
 			sourceTree = "<group>";
 		};
 		7EE608661F53C48B00CB9173 = {
@@ -118,6 +135,7 @@
 		7EE608FF1F54219C00CB9173 /* AXProject */ = {
 			isa = PBXGroup;
 			children = (
+				7E7CB6AD1F90BF6700B54BA7 /* CTMediatorCategory */,
 				7EE609001F5660E000CB9173 /* ViewControllers */,
 				7EE609011F5660FE00CB9173 /* Views */,
 				7EE609031F56614E00CB9173 /* Models */,
@@ -299,11 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7CB6B31F90BF8600B54BA7 /* Target_Project.m in Sources */,
 				7EE609131F568D7500CB9173 /* ProjectViewModel.m in Sources */,
 				7EE609061F56616C00CB9173 /* ProjectListViewController.m in Sources */,
 				7EE6090B1F56640700CB9173 /* CircleView.m in Sources */,
 				7EE6087A1F53C48B00CB9173 /* ViewController.m in Sources */,
 				7EE609101F568D5800CB9173 /* ProjectModel.m in Sources */,
+				7E7CB6B21F90BF8600B54BA7 /* CTMediator+Project.m in Sources */,
 				7EE6090C1F56640700CB9173 /* ProjectListTableViewCell.m in Sources */,
 				7EE608771F53C48B00CB9173 /* AppDelegate.m in Sources */,
 				7EE608741F53C48B00CB9173 /* main.m in Sources */,

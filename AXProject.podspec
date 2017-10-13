@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "AXProject"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "项目列表"
 
   s.description  = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/GG-beyond/AXProject.git", :tag => "0.0.3" }
+  s.source       = { :git => "https://github.com/GG-beyond/AXProject.git", :tag => "0.0.4" }
   
 
 #  s.source_files = "AXProject/AXProject/**"
@@ -57,7 +57,14 @@ Pod::Spec.new do |s|
         app.dependency 'AXProject/Models'
 
     end
-    
+       
+    s.subspec 'CTMediatorCategory' do |ct|
+
+        ct.source_files =  'AXUserInfo/AXUserInfo/CTMediatorCategory/*.{h,m}'
+        ct.dependency 'AXUserInfo/ViewControllers'
+
+    end
+
 
   s.exclude_files = "Classes/Exclude"
   s.prefix_header_file = "AXProject/MyConstants.h"
